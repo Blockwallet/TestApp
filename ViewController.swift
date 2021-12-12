@@ -56,8 +56,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let fromDate = generateNextFromDate(toDate)
             let from = fromDate.getDateAsFormattedString()
             
-            print("Url: \("\(baseUrl)?from=\(from)&to=\(to)")")
-            
             AF.request("\(baseUrl)?from=\(from)&to=\(to)").validate().responseDecodable(of: ActivitiesStruct.self) { (response) in
                 
                 defer { self.isLoadingNewActivities = false }
@@ -70,8 +68,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     if let activities = value.activities{
                         
                         if activities.count > 0{
-                            
-                            print("activities.count: \(activities.count)")
                             
                             for activity in activities{
                                 
