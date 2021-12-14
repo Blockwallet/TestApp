@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.2.2)
+  - ESPullToRefresh (2.9.3)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - ESPullToRefresh
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ESPullToRefresh
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+
+PODFILE CHECKSUM: f916322603c4efdff493aa19f7274df51279556a
+
+COCOAPODS: 1.11.2
