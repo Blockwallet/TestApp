@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivitiesTableViewCell" id="sRh-8r-bsa" customClass="ActivitiesTableViewCell" customModule="Testapp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sRh-8r-bsa" id="i1i-t3-8IP">
+                <rect key="frame" x="0.0" y="0.0" width="422" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nCd-ZY-hIw">
+                        <rect key="frame" x="12" y="12" width="398" height="126"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="WaO-Xt-wQ7">
+                                <rect key="frame" x="0.0" y="0.0" width="37" height="126"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHh-Cg-WXq">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="36"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dFB-Xo-b3N">
+                                                <rect key="frame" x="0.0" y="4" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="CQe-8Z-AL4"/>
+                                                    <constraint firstAttribute="width" secondItem="dFB-Xo-b3N" secondAttribute="height" multiplier="1:1" id="aW0-GC-r7t"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="dFB-Xo-b3N" secondAttribute="bottom" id="Fvb-4s-Kjn"/>
+                                            <constraint firstAttribute="trailing" secondItem="dFB-Xo-b3N" secondAttribute="trailing" constant="5" id="NZ5-8Q-7ER"/>
+                                            <constraint firstItem="dFB-Xo-b3N" firstAttribute="top" secondItem="cHh-Cg-WXq" secondAttribute="top" constant="4" id="S2c-Gw-nwp"/>
+                                            <constraint firstItem="dFB-Xo-b3N" firstAttribute="leading" secondItem="cHh-Cg-WXq" secondAttribute="leading" id="WVK-vt-LUw"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7kN-hL-iz8">
+                                        <rect key="frame" x="0.0" y="36" width="37" height="90"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HlB-SY-Nuk">
+                                <rect key="frame" x="42" y="0.0" width="345.5" height="126"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="BGu-in-LrE">
+                                        <rect key="frame" x="0.0" y="0.0" width="345.5" height="102"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8z-cY-lLa">
+                                                <rect key="frame" x="0.0" y="0.0" width="345.5" height="19"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content=" ">
+                                                        <attributes>
+                                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <font key="NSFont" size="16" name="FunkisQText-Regular"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="x8z-cY-lLa" secondAttribute="bottom" id="SL4-OQ-27x"/>
+                                            <constraint firstItem="x8z-cY-lLa" firstAttribute="top" secondItem="BGu-in-LrE" secondAttribute="top" id="bZP-zO-k7X"/>
+                                            <constraint firstItem="x8z-cY-lLa" firstAttribute="centerX" secondItem="BGu-in-LrE" secondAttribute="centerX" id="oyt-UZ-90w"/>
+                                            <constraint firstItem="x8z-cY-lLa" firstAttribute="width" secondItem="BGu-in-LrE" secondAttribute="width" id="qcO-Mr-3yZ"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emi-YL-YOn">
+                                        <rect key="frame" x="0.0" y="110" width="345.5" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Blr-H5-YSw"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.5607843137254902" green="0.58823529411764708" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="12" name="FunkisQText-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="251" id="qyb-04-laR"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="KqN-K3-TyM">
+                                <rect key="frame" x="392.5" y="0.0" width="5.5" height="126"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHQ-SY-bk0">
+                                        <rect key="frame" x="0.0" y="2" width="5.5" height="21"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content=" ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.34509803921568627" green="0.74901960784313726" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="18" name="FunkisQText-Medium"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xHQ-SY-bk0" firstAttribute="top" secondItem="KqN-K3-TyM" secondAttribute="top" constant="2" id="a6z-Rc-Y4e"/>
+                                    <constraint firstItem="xHQ-SY-bk0" firstAttribute="leading" secondItem="KqN-K3-TyM" secondAttribute="leading" id="c2w-Mk-NhW"/>
+                                    <constraint firstAttribute="trailing" secondItem="xHQ-SY-bk0" secondAttribute="trailing" id="sqn-rR-hJZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nCd-ZY-hIw" firstAttribute="top" secondItem="i1i-t3-8IP" secondAttribute="top" constant="12" id="8v2-4y-0PU"/>
+                    <constraint firstAttribute="bottom" secondItem="nCd-ZY-hIw" secondAttribute="bottom" constant="12" id="9Ew-ce-qkL"/>
+                    <constraint firstItem="nCd-ZY-hIw" firstAttribute="leading" secondItem="i1i-t3-8IP" secondAttribute="leading" constant="12" id="VJY-nD-tq4"/>
+                    <constraint firstAttribute="trailing" secondItem="nCd-ZY-hIw" secondAttribute="trailing" constant="12" id="tEj-uN-iWR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLbl" destination="xHQ-SY-bk0" id="Amf-pX-fHV"/>
+                <outlet property="dateLbl" destination="emi-YL-YOn" id="isC-e5-hKC"/>
+                <outlet property="mainLbl" destination="x8z-cY-lLa" id="lNy-F4-232"/>
+                <outlet property="userImg" destination="dFB-Xo-b3N" id="cNU-2e-My9"/>
+            </connections>
+            <point key="canvasLocation" x="840.57971014492762" y="92.410714285714278"/>
+        </tableViewCell>
+    </objects>
+</document>
